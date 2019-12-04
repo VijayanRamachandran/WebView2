@@ -35,3 +35,15 @@ We have done prototype to host the WebView2Control in WPF. Below are the requisi
 | WPFHostWindow - Popup | WPF Exe which hosts Modal WPF Window which renders PDF in WebView2 Control |
 | WPFHostWindow - Pdf | WPF Exe which hosts WebView2 and PDF is loaded to WebView2. |
 | WPFHostWindow - TwoControls | WPF Exe which hosts Multiple WebView2. |
+
+# Technical Open Issues
+
+##  Microsoft::WRL::ComPtr in C++ Header File:
+As of now, In C++ DLL ( WebView2Browser-WithoutToolbar-Dll, BrowserWindow.h ) we can't have any member variable of type Microsoft::WRL::ComPtr<IWebView2Environment> in the header file while we export the class with  __declspec( dllexport ).
+  
+To overcome this, we made all member variable which requries Microsoft::WRL::ComPtr< >, as global variable in BrowserWindow.cpp and in Tab.cpp.
+
+With this workaround prototypes are working as expected, but we need a fix for it.
+
+## PS: Release Nuget Package for WebView2
+As we don't have release Nuget Package for WebView2 and its dependencies, currently we evaulated the performance of rendering a page in WebView2 with Debug X64 version of our C++, C# Wrapper and WPF Application. Because of this we are observing a drastic performance dropdown in rendering a page ( Refer Page 6 and 7 in WebView2hosting.pdf )
