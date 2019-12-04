@@ -18,9 +18,9 @@ We have done prototype to host the WebView2Control in WPF. Below are the requisi
 -   [Microsoft.Web.WebView2 - Latest](https://www.nuget.org/packages/Microsoft.Web.WebView2) SDK ( Nuget Package )
 -   [Microsoft.Windows.ImplementationLibrary - Latest](https://www.nuget.org/packages/Microsoft.Windows.ImplementationLibrary) SDK ( Nuget Package )
 
-##  Steps To Execute Prototype
+##  Steps To Execute Prototypes
 
-1. After performing all prerequisites clone all Prototypes from https://github.com/VijayanRamachandran/WebView2.git
+1. After performing all prerequisites, clone all Prototypes from https://github.com/VijayanRamachandran/WebView2.git
 2. Execute WPFHostWindow.exe available in respective bin folder.
 
 ##  Respository Information
