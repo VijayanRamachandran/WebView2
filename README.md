@@ -36,7 +36,7 @@ We have done prototype to host the WebView2Control in WPF. Below are the requisi
 | WPFHostWindow - Pdf | WPF Exe which hosts WebView2 and PDF is loaded to WebView2. |
 | WPFHostWindow - TwoControls | WPF Exe which hosts Multiple WebView2. |
 
-# Open Issues
+# Open Issue
 
 ##  Microsoft::WRL::ComPtr in C++ Header File:
 As of now, In C++ DLL ( WebView2Browser-WithoutToolbar-Dll, BrowserWindow.h ) we can't have any member variable of type Microsoft::WRL::ComPtr<IWebView2Environment> in the header file while we export the class with  __declspec( dllexport ).
