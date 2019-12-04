@@ -46,4 +46,4 @@ To overcome this, we made all member variable which requries Microsoft::WRL::Com
 With this workaround prototypes are working as expected, but we need a fix for it.
 
 ## PS: Release Nuget Package for WebView2
-As we don't have release Nuget Package for WebView2 and its dependencies, currently we evaulated the performance of rendering a page in WebView2 with Debug X64 version of our C++, C# Wrapper and WPF Application. Because of this we are observing a drastic performance dropdown in rendering a page ( Refer Page 6 and 7 in [WebView2hosting.pdf](https://github.com/VijayanRamachandran/WebView2/blob/master/Webview2hosting.pdf))
+As we don't have release Nuget Package for WebView2 and its dependencies, currently we evaulated the performance of rendering a page in WebView2 with Debug X64 version of our C++, C# Wrapper and WPF Application. Because of this we are observing a drastic performance dropdown in rendering a page ( Refer Page 6 and 7 in [WebView2hosting.pdf](https://github.com/VijayanRamachandran/WebView2/blob/master/Webview2hosting.pdf) )
