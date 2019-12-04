@@ -41,7 +41,7 @@ We have done prototype to host the WebView2Control in WPF. Below are the requisi
 ##  Microsoft::WRL::ComPtr in C++ Header File:
 As of now, In C++ DLL ( WebView2Browser-WithoutToolbar-Dll, [BrowserWindow.h](https://github.com/VijayanRamachandran/WebView2/blob/master/WebView2Browser-WithoutToolbar-Dll/WebView2Browser-Master/BrowserWindow.h) ) we can't have any member variable of type Microsoft::WRL::ComPtr<IWebView2Environment> in the header file while we export the class with  __declspec( dllexport ).
   
-To overcome this, we made all member variable which requries Microsoft::WRL::ComPtr< >, as global variable in [BrowserWindow.cpp](https://github.com/VijayanRamachandran/WebView2/blob/master/WebView2Browser-WithoutToolbar-Dll/WebView2Browser-Master/BrowserWindow.cpp) and in [Tab.cpp].(https://github.com/VijayanRamachandran/WebView2/blob/master/WebView2Browser-WithoutToolbar-Dll/WebView2Browser-Master/Tab.cpp)
+To overcome this, we made all member variable which requries Microsoft::WRL::ComPtr< >, as global variable in [BrowserWindow.cpp](https://github.com/VijayanRamachandran/WebView2/blob/master/WebView2Browser-WithoutToolbar-Dll/WebView2Browser-Master/BrowserWindow.cpp) and in [Tab.cpp](https://github.com/VijayanRamachandran/WebView2/blob/master/WebView2Browser-WithoutToolbar-Dll/WebView2Browser-Master/Tab.cpp)
 
 With this workaround prototypes are working as expected, but we need a fix for it.
 
