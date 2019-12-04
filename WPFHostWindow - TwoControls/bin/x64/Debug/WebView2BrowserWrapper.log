@@ -1,0 +1,6 @@
+﻿  WebView2BrowserWrapper.cpp
+d:\workdirectory\webview2browserwrapper\webview2browserwrapper.h(89): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+d:\workdirectory\webview2browserwrapper\webview2browserwrapper.h(86): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+     Creating library D:\WorkDirectory\WebView2BrowserWrapper\x64\Debug\WebView2BrowserWrapper.lib and object D:\WorkDirectory\WebView2BrowserWrapper\x64\Debug\WebView2BrowserWrapper.exp
+  WebView2BrowserWrapper.vcxproj -> D:\WorkDirectory\WebView2BrowserWrapper\x64\Debug\WebView2BrowserWrapper.dll

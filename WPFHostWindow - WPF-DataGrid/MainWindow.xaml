@@ -1,0 +1,31 @@
+﻿<Window x:Class="WPFHostWindow.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFHostWindow"
+        mc:Ignorable="d"
+        Title="WPF Window" WindowStartupLocation="CenterScreen" WindowState="Maximized" Name="WPFParentMainWindow">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width = "*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height = "Auto" />
+            <RowDefinition Height = "*" />
+        </Grid.RowDefinitions>
+
+        <Label Grid.Column="0" Grid.Row="0" FontWeight="Bold" FontSize="30">WPF Data Grid</Label>
+        <DataGrid Grid.Column ="0" Grid.Row="1" Name ="dataGrid" RowHeight ="30" AlternatingRowBackground = "DarkGray" AlternationCount = "2" AutoGenerateColumns= "False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header = "Id" Binding = "{Binding Id}" Width="60"/>
+                <DataGridTextColumn Header = "Company" Binding = "{Binding Name}" Width="720"/>
+                <DataGridTextColumn Header = "Contact" Binding = "{Binding Contact}" Width="420"/>
+                <DataGridTextColumn Header = "Country" Binding = "{Binding Country}" Width="320"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+
+</Window>

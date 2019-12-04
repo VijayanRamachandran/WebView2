@@ -1,0 +1,53 @@
+﻿<Window x:Class="WPFHostWindow.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFHostWindow"
+        mc:Ignorable="d"
+        Title="WPF Host Window - Keyboard Interaction" WindowStartupLocation="CenterScreen" WindowState="Maximized" Loaded="On_UIReady">
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width = "*" />
+            <ColumnDefinition Width = "*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height = "*" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Grid.Column="0">
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width = "*" />
+                <ColumnDefinition Width = "*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height = "*" />
+                <RowDefinition Height = "*" />
+                <RowDefinition Height = "*" />
+                <RowDefinition Height = "*" />
+                <RowDefinition Height = "*" />
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" FontSize="15" FontStyle="Normal">Name</Label>
+            <Label Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" FontSize="15" FontStyle="Normal">Age</Label>
+            <Label Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" FontSize="15" FontStyle="Normal">Company</Label>
+            <Label Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" FontSize="15" FontStyle="Normal">Address</Label>
+            <Label Grid.Row="4" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" FontSize="15" FontStyle="Normal">Contact</Label>
+            
+            <TextBox Name="PersonName" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Height="40" Grid.Row="0" Grid.Column="1"/>
+            <TextBox Name="PersonAge" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Height="40" Grid.Row="1" Grid.Column="1"/>
+            <TextBox Name="PersonCompany" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Height="40" Grid.Row="2" Grid.Column="1"/>
+            <TextBox Name="PersonAddress" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Height="40" Grid.Row="3" Grid.Column="1"/>
+            <TextBox Name="PersonContact" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Height="40" Grid.Row="4" Grid.Column="1"/>
+            
+        </Grid>
+        
+        <Border Grid.Row="0" Grid.Column="1" Name="ControlHostElement1" BorderThickness="5" BorderBrush="DarkGray" Focusable="False"/>
+
+    </Grid>
+
+</Window>
