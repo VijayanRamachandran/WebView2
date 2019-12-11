@@ -47,3 +47,14 @@ With this workaround prototypes are working as expected, but we need a fix for i
 
 ## PS: Release Nuget Package for WebView2
 As we don't have release Nuget Package for WebView2 and its dependencies, currently we evaulated the performance of rendering a page in WebView2 with Debug X64 version of our C++, C# Wrapper and WPF Application. Because of this we are observing a drastic performance dropdown in rendering a page ( Refer Page 6 and 7 in [WebView2hosting.pdf](https://github.com/VijayanRamachandran/WebView2/blob/master/Webview2hosting.pdf) )
+
+## If Prototype doesn't Render HTML
+If prototypes doesnt render HTML as expected in WPF, It can be due to Nuget Version of Microsoft.Web.WebView2, Microsoft.Windows.ImplementationLibrary and Microsoft Edge Chromium.
+
+Request you to install below stable version instead of latest.
+
+Microsoft.Web.WebView2 - V0.8.270
+
+Microsoft.Windows.ImplementationLibrary - V1.0.190716.2
+
+Microsoft Edge Chromium - 79.0.309.43
