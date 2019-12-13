@@ -35,6 +35,7 @@ We have done prototype to host the WebView2Control in WPF. Below are the requisi
 | WPFHostWindow - Popup | WPF Exe which hosts Modal WPF Window which renders PDF in WebView2 Control |
 | WPFHostWindow - Pdf | WPF Exe which hosts WebView2 and PDF is loaded to WebView2. |
 | WPFHostWindow - TwoControls | WPF Exe which hosts Multiple WebView2. |
+| WPFHostWindow - Html-Table - PostScript | WPF Exe which hosts WebView2 with HTML5 Canvas and renders 2D Image by Posting Script to WebView2. |
 
 # Open Issue
 
