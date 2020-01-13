@@ -29,13 +29,14 @@ We have done prototype to host the WebView2Control in WPF. Below are the requisi
 |--|--|
 | WebView2Browser-WithoutToolbar-Dll|  C++ DLL which wraps call to WebView2 API's |	
 | WebView2BrowserWrapper |  C# Wrapper |	
-| WPFHostWindow - Html - Table - Angular | WPF Exe which hosts WebView2 and Renders Angular 9 Material Table |
 | WPFHostWindow - Html - Table | WPF Exe which hosts WebView2 and Renders Html Table with Hardcoded Data |
-| WPFHostWindow - KeyBoard-Interaction | WPF Exe which hosts some WPF Controls and WebView2 Control to check the TAB Key Interaction ( Focus ) |
+| WPFHostWindow - Html-Table - DisableDevTools | WPF Exe which hosts WebView2 and renders static HTML table and disables DevTools using WebView2 provided API |
+| WPFHostWindow - Html-Table - PostScript | WPF Exe which hosts WebView2 with HTML5 Canvas and renders 2D Image by Posting Script to WebView2. |
+| WPFHostWindow - Html-Table - UrlNavigation | WPF Exe which hosts WebView2 and renders static HTML Table upon button click |
+| WPFHostWindow - KeyBoard-Tab | WPF Exe which hosts some WPF Controls and WebView2 Control to check the TAB Key Interaction ( Focus ) |
 | WPFHostWindow - Popup | WPF Exe which hosts Modal WPF Window which renders PDF in WebView2 Control |
 | WPFHostWindow - Pdf | WPF Exe which hosts WebView2 and PDF is loaded to WebView2. |
 | WPFHostWindow - TwoControls | WPF Exe which hosts Multiple WebView2. |
-| WPFHostWindow - Html-Table - PostScript | WPF Exe which hosts WebView2 with HTML5 Canvas and renders 2D Image by Posting Script to WebView2. |
 
 # Open Issue
 
