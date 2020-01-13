@@ -1,0 +1,25 @@
+﻿  stdafx.cpp
+  AssemblyInfo.cpp
+  WebView2BrowserWrapper.cpp
+D:\WorkDirectory\WebView2BrowserWrapper\WebView2BrowserWrapper.h(7,1): warning C4005: 'LOWORD': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(204): message : see previous definition of 'LOWORD'
+D:\WorkDirectory\WebView2BrowserWrapper\WebView2BrowserWrapper.h(8,1): warning C4005: 'HIWORD': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(205): message : see previous definition of 'HIWORD'
+D:\WorkDirectory\WebView2BrowserWrapper\WebView2BrowserWrapper.h(113,15): warning C4490: 'override': incorrect use of override specifier; 'WebView2BrowserWrapper::WebView2BrowserWrapper::TranslateAccelerator' does not match a base ref class method
+D:\WorkDirectory\WebView2BrowserWrapper\WebView2BrowserWrapper.h(113,15): message : 'new' or 'override' are only allowed when a matching base method from a ref class exists
+D:\WorkDirectory\WebView2BrowserWrapper\WebView2BrowserWrapper.h(113,15): message : Matching base method 'System::Windows::Interop::IKeyboardInputSink::TranslateAccelerator' is from an interface class (not a ref class)
+D:\WorkDirectory\WebView2BrowserWrapper\WebView2BrowserWrapper.h(132,15): warning C4490: 'override': incorrect use of override specifier; 'WebView2BrowserWrapper::WebView2BrowserWrapper::TabInto' does not match a base ref class method
+D:\WorkDirectory\WebView2BrowserWrapper\WebView2BrowserWrapper.h(132,15): message : 'new' or 'override' are only allowed when a matching base method from a ref class exists
+D:\WorkDirectory\WebView2BrowserWrapper\WebView2BrowserWrapper.h(132,15): message : Matching base method 'System::Windows::Interop::IKeyboardInputSink::TabInto' is from an interface class (not a ref class)
+D:\WorkDirectory\WebView2BrowserWrapper\WebView2BrowserWrapper.h(153,1): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+D:\WorkDirectory\WebView2BrowserWrapper\WebView2BrowserWrapper.h(150,30): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\WorkDirectory\WebView2BrowserWrapper\WebView2BrowserWrapper.h(150,11): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\WorkDirectory\WebView2BrowserWrapper\WebView2BrowserWrapper.h(177,1): warning C4311: 'type cast': pointer truncation from 'void *' to 'DWORD'
+D:\WorkDirectory\WebView2BrowserWrapper\WebView2BrowserWrapper.h(177,1): warning C4302: 'type cast': truncation from 'void *' to 'DWORD'
+D:\WorkDirectory\WebView2BrowserWrapper\WebView2BrowserWrapper.h(178,1): warning C4311: 'type cast': pointer truncation from 'void *' to 'DWORD'
+D:\WorkDirectory\WebView2BrowserWrapper\WebView2BrowserWrapper.h(178,1): warning C4302: 'type cast': truncation from 'void *' to 'DWORD'
+  Generating Code...
+  .NETFramework,Version=v4.6.1.AssemblyAttributes.cpp
+  AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+     Creating library D:\WorkDirectory\WebView2BrowserWrapper\x64\Debug\WebView2BrowserWrapper.lib and object D:\WorkDirectory\WebView2BrowserWrapper\x64\Debug\WebView2BrowserWrapper.exp
+  WebView2BrowserWrapper.vcxproj -> D:\WorkDirectory\WebView2BrowserWrapper\x64\Debug\WebView2BrowserWrapper.dll
